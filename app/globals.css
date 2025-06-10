@@ -40,3 +40,7 @@ a {
     color-scheme: dark;
   }
 }
+
+@import url("../public/css/vendor.css");
+@import url("../public/css/base.css");
+@import url("../public/css/main.css");
