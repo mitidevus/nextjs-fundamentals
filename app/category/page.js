@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function CategoryPage() {
   return (
     <>
       <header className="short-header">
@@ -14,12 +14,12 @@ export default function Home() {
 
           <nav id="main-nav-wrap">
             <ul className="main-navigation sf-menu">
-              <li className="current">
+              <li>
                 <Link href="/" title="">
                   Home
                 </Link>
               </li>
-              <li className="has-children">
+              <li className="has-children current">
                 <Link href="/category" title="">
                   Categories
                 </Link>
@@ -120,110 +120,18 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="bricks">
+      <section id="page-header">
+        <div className="row current-cat">
+          <div className="col-full">
+            <h1>Category: Photography</h1>
+          </div>
+        </div>
+      </section>
+
+      <section id="bricks" className="with-top-sep">
         <div className="row masonry">
           <div className="bricks-wrapper">
             <div className="grid-sizer"></div>
-
-            <div className="brick entry featured-grid animate-this">
-              <div className="entry-content">
-                <div id="featured-post-slider" className="flexslider">
-                  <ul className="slides">
-                    <li>
-                      <div className="featured-post-slide">
-                        <div
-                          className="post-background"
-                          style={{
-                            backgroundImage: `url(
-                              "images/thumbs/featured/featured-1.jpg"
-                            )`,
-                          }}
-                        ></div>
-
-                        <div className="overlay"></div>
-
-                        <div className="post-content">
-                          <ul className="entry-meta">
-                            <li>September 06, 2016</li>
-                            <li>
-                              <Link href="#">Naruto Uzumaki</Link>
-                            </li>
-                          </ul>
-
-                          <h1 className="slide-title">
-                            <Link href="/single-standard" title="">
-                              Minimalism Never Goes Out of Style
-                            </Link>
-                          </h1>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="featured-post-slide">
-                        <div
-                          className="post-background"
-                          style={{
-                            backgroundImage: `url(
-                              "images/thumbs/featured/featured-2.jpg"
-                            )`,
-                          }}
-                        ></div>
-
-                        <div className="overlay"></div>
-
-                        <div className="post-content">
-                          <ul className="entry-meta">
-                            <li>August 29, 2016</li>
-                            <li>
-                              <Link href="#">Sasuke Uchiha</Link>
-                            </li>
-                          </ul>
-
-                          <h1 className="slide-title">
-                            <Link href="/single-standard" title="">
-                              Enhancing Your Designs with Negative Space
-                            </Link>
-                          </h1>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="featured-post-slide">
-                        <div
-                          className="post-background"
-                          style={{
-                            backgroundImage: `url(
-                              "images/thumbs/featured/featured-3.jpg"
-                            )`,
-                          }}
-                        ></div>
-
-                        <div className="overlay"></div>
-
-                        <div className="post-content">
-                          <ul className="entry-meta">
-                            <li>August 27, 2016</li>
-                            <li>
-                              <Link href="#" className="author">
-                                Naruto Uzumaki
-                              </Link>
-                            </li>
-                          </ul>
-
-                          <h1 className="slide-title">
-                            <Link href="/single-standard" title="">
-                              Music Album Cover Designs for Inspiration
-                            </Link>
-                          </h1>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
             <article className="brick entry format-standard animate-this">
               <div className="entry-thumb">
@@ -312,7 +220,7 @@ export default function Home() {
 
                 <div className="audio-wrap">
                   <audio
-                    id="player"
+                    id="player2"
                     src="media/AirReview-Landmarks-02-ChasingCorporate.mp3"
                     width="100%"
                     height="42"
@@ -359,7 +267,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="brick entry animate-this">
+            <article className="brick entry format-standard animate-this">
               <div className="entry-thumb">
                 <Link href="/single-standard" className="thumb-link">
                   <Image
@@ -396,7 +304,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="brick entry animate-this">
+            <article className="brick entry format-standard animate-this">
               <div className="entry-thumb">
                 <Link href="/single-standard" className="thumb-link">
                   <Image
@@ -586,7 +494,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="brick entry animate-this">
+            <article className="brick entry format-standard animate-this">
               <div className="entry-thumb">
                 <Link href="/single-standard" className="thumb-link">
                   <Image
@@ -623,7 +531,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="brick entry animate-this">
+            <article className="brick entry format-standard animate-this">
               <div className="entry-thumb">
                 <Link href="/single-standard" className="thumb-link">
                   <Image
