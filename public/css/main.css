@@ -2024,17 +2024,6 @@ header .logo a {
   }
 }
 
-.main-navigation li.has-children:hover > .sub-menu {
-  display: block;
-}
-
-.sub-menu {
-  display: none; /* Ẩn mặc định */
-  position: absolute; /* Hoặc static tuỳ layout */
-  background: #fff;
-  z-index: 10;
-}
-
 /* make sure the menu is visible on larger screens
  * ------------------------------------------------------------------- */
 @media only screen and (min-width: 769px) {

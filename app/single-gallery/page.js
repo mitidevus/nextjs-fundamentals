@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function SingleGallery() {
   return (
@@ -737,6 +738,10 @@ export default function SingleGallery() {
       <div id="preloader">
         <div id="loader"></div>
       </div>
+
+      <Script src="js/jquery-2.1.3.min.js" strategy="beforeInteractive" />
+      <Script src="js/plugins.js" />
+      <Script src="js/main.js" />
     </>
   );
 }

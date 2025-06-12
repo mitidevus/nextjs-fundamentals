@@ -126,8 +126,10 @@ export default function AboutPage() {
             <section>
               <div className="content-media">
                 <Image
-                  src="../public/images/thumbs/about-us.jpg"
+                  src="/public/images/thumbs/about-us.jpg"
                   alt="about-us"
+                  width={800}
+                  height={800}
                 />
               </div>
 

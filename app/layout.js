@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,19 +20,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="no-js">
-      <head>
+      <Head>
         <script src="/js/modernizr.js" defer></script>
         <script src="/js/pace.min.js" defer></script>
 
         <link rel="icon" href="/favicon.ico" />
-      </head>
-      <body id="top">
-        {children}
+      </Head>
 
-        <script src="/js/jquery-2.1.3.min.js" defer></script>
-        <script src="/js/plugins.js" defer></script>
-        <script src="/js/main.js" defer></script>
-      </body>
+      <body id="top">{children}</body>
     </html>
   );
 }
